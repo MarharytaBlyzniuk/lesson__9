@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-contrast);
 }
 
-. footer__name {
+.footer__name {
     color: var(--color-contrast);
     margin: 0 0 20px;
     font-size: 21px;
