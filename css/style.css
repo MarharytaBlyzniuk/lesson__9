@@ -7,7 +7,7 @@
     --bg-accent: #f9f9f9;
 }
 
-.body {
+body {
     font-family: "Roboto", sans-serif;
     color: var(--color-main);
     background-color: var(--bg-main);
@@ -201,6 +201,9 @@ h1, h2, h3, h4, h5, h6 {
 .video {
     background-color: var(--bg-main);
     padding-top: 100px;
+    padding-bottom: 100px;
+
+
 }
 
 .video__title {
@@ -220,7 +223,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 100px;
     position: relative;
     margin: 0;
-    padding-bottom: 100px;
     align-content: center;
 }
 
@@ -228,7 +230,6 @@ h1, h2, h3, h4, h5, h6 {
 .video__btn__img {
     width: 1110px;
     height: 600px;
-    position: absolute;
     left: 405px;
     right: 405px;
 
@@ -236,12 +237,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .video__btn__img__play {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 910px;
-    top: 250px;
-
-
+    top: 50%;
+    left: 50%;
+    background: none;
+    border: none;
+    translate: -50% -50%;
 }
 
 /*video*/
