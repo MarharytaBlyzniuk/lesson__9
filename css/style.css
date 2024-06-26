@@ -101,22 +101,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /*ofter*/
 
-.ofter {
+.offer {
     padding-top: 142px;
     padding-bottom: 142px;
 }
 
-.ofter__content {
+.offer__content {
     max-width: 540px;
 }
 
-.ofter__title {
+.offer__title {
     font-size: 48px;
     margin: 0 0 60px;
 
 }
 
-.ofter__desc {
+.offer__desc {
     width: 540px;
     margin: 0 0 60px;
 }
@@ -272,3 +272,115 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*footer*/
+
+@media screen and (max-width: 1250px) {
+    .center {
+        padding-left: calc(50vw - 450px);
+        padding-right: calc(50vw - 450px);
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .center {
+        padding-left: calc(50vw - 350px);
+        padding-right: calc(50vw - 350px);
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+    .offer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .center {
+        padding-left: calc(50vw - 300px);
+        padding-right: calc(50vw - 300px);
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .nav {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .offer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .offer__content {
+        max-width: 350px;
+    }
+
+    .offer__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .offer__desc {
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        min-height: 45px;
+        padding: 15px 30px;
+        max-width: 180px;
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .center {
+        padding-left: calc(50vw - 200px);
+        padding-right: calc(50vw - 200px);
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .center {
+        padding-left: calc(50vw - 185px);
+        padding-right: calc(50vw - 185px);
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .center {
+        padding-left: calc(50vw - 160px);
+        padding-right: calc(50vw - 160px);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .center {
+        padding-left: calc(50vw - 140px);
+        padding-right: calc(50vw - 140px);
+    }
+}
