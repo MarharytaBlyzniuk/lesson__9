@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b814d6bf-441b-4f25-b639-41349fc2febe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/common/_btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/common/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/common/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/common/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/common/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/common/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/index/_about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/index/_offer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/index/_pict.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/index/_video.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/index/_offer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/index/_offer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/index/_video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/index/_video.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +102,7 @@
       <workItem from="1719504582966" duration="640000" />
       <workItem from="1719506673510" duration="2025000" />
       <workItem from="1719831600364" duration="163000" />
-      <workItem from="1719832750324" duration="10244000" />
+      <workItem from="1719832750324" duration="11104000" />
     </task>
     <servers />
   </component>

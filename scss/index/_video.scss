@@ -24,6 +24,17 @@
       margin: 0 auto 0 auto;
     }
 
+    @media screen and (max-width: 1040px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -35,8 +46,42 @@
     &__img {
       max-width: 1110px;
       height: 600px;
+      @media screen and (max-width: 1040px) {
+        max-width: 100%;
+        height: auto
+      }
+
+      @media screen and (max-width: 950px) {
+        max-width: 100%;
+        height: auto
+      }
+
+      @media screen and (max-width: 860px) {
+        max-width: 100%;
+        height: auto
+      }
+
+      @media screen and (max-width: 750px) {
+        max-width: 100%;
+        height: auto
+
+      }
 
 
+      @media screen and (max-width: 620px) {
+        max-width: 100%;
+        height: auto
+      }
+
+      @media screen and (max-width: 420px) {
+        max-width: 100%;
+        height: auto
+      }
+
+      @media screen and (max-width: 375px) {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     &__img__play {
@@ -48,67 +93,5 @@
       translate: -50% -50%;
     }
   }
-
-
-  @media screen and (max-width: 1040px) {
-
-    &__title {
-      margin-bottom: 20px;
-    }
-
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-  @media screen and (max-width: 950px) {
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-  @media screen and (max-width: 860px) {
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-
-  @media screen and (max-width: 620px) {
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    &__title {
-      margin-bottom: 30px;
-    }
-
-    &__btn__img {
-      max-width: 100%;
-      height: auto
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    &__title {
-      margin-bottom: 30px;
-    }
-    &__btn__img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+  
 }

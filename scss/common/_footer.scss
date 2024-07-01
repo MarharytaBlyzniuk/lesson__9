@@ -8,6 +8,20 @@
     color: var(--color-contrast);
     margin: 0 0 20px;
     font-size: 21px;
+    @media screen and (max-width: 750px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 420px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__copyright {
@@ -19,29 +33,17 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    &__name {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
   }
 
   @media screen and (max-width: 420px) {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    &__name {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
   }
 
   @media screen and (max-width: 375px) {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    &__name {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
   }
 }
