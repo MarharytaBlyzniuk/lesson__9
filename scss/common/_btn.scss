@@ -1,0 +1,42 @@
+.btn {
+  background: var(--color-accent);
+  color: var(--color-contrast);
+  text-decoration: none;
+  min-width: 225px;
+  width: 0;
+  min-height: 65px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+
+  &:hover, &:focus {
+    background: var(--color-accent);
+    color: var(--color-contrast);
+  }
+
+  &:active {
+    opacity: .7;
+  }
+
+  @media screen and (max-width: 750px) {
+
+    min-height: 45px;
+    padding: 15px 30px;
+    max-width: 180px;
+  }
+  @media screen and (max-width: 420px) {
+    min-height: 45px;
+    padding: 15px 30px;
+    max-width: 180px;
+  }
+
+  @media screen and (max-width: 375px) {
+    min-height: 45px;
+    padding: 15px 30px;
+    max-width: 180px;
+  }
+}
+
+

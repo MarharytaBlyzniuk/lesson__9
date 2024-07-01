@@ -1,0 +1,92 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-main);
+  background-color: var(--bg-main);
+  line-height: 1.64;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  @media screen and (max-width: 1040px) {
+    display: block;
+    overflow-x: hidden;
+  }
+  @media screen and (max-width: 860px) {
+    display: block;
+    overflow-x: hidden;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 750px) {
+    display: block;
+    overflow-x: hidden;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 420px) {
+    display: block;
+    overflow-x: hidden;
+  }
+  @media screen and (max-width: 375px) {
+    display: block;
+    overflow-x: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-title);
+  font-weight: 500;
+}
+
+.center {
+  padding: 0 calc(50vw - 555px);
+  box-sizing: border-box;
+  background-color: var(--bg-main);
+
+  @media screen and (max-width: 1250px) {
+    padding-left: calc(50vw - 450px);
+    padding-right: calc(50vw - 450px);
+  }
+  @media screen and (max-width: 1040px) {
+    padding-left: calc(50vw - 450px);
+    padding-right: calc(50vw - 450px);
+  }
+  @media screen and (max-width: 950px) {
+    padding-left: calc(50vw - 320px);
+    padding-right: calc(50vw - 320px);
+  }
+  @media screen and (max-width: 860px) {
+    padding-left: calc(50vw - 290px);
+    padding-right: calc(50vw - 290px);
+  }
+  @media screen and (max-width: 750px) {
+    padding-left: calc(50vw - 300px);
+    padding-right: calc(50vw - 300px);
+  }
+  @media screen and (max-width: 620px) {
+    padding-left: calc(50vw - 200px);
+    padding-right: calc(50vw - 200px);
+  }
+  @media screen and (max-width: 420px) {
+    padding-left: calc(50vw - 180px);
+    padding-right: calc(50vw - 180px);
+  }
+  @media screen and (max-width: 375px) {
+    padding-left: calc(50vw - 145px);
+    padding-right: calc(50vw - 145px);
+  }
+}
+
+.img {
+  @media screen and (max-width: 1040px) {
+    display: block;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 420px) {
+    display: block;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 375px) {
+    display: block;
+    max-width: 100%;
+  }
+}
