@@ -12,7 +12,9 @@ body {
     color: var(--color-main);
     background-color: var(--bg-main);
     line-height: 1.64;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
@@ -24,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .center {
     padding: 0 calc(50vw - 555px);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: var(--bg-main);
 }
@@ -36,10 +39,17 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 225px;
     width: 0;
     min-height: 65px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 20px 40px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -49,13 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:active {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 /*btn*/
-
 /*header*/
-
 .header {
     padding-top: 80px;
     padding-bottom: 20px;
@@ -66,12 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*header*/
-
 /*nav*/
 .nav__list {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 42px;
 }
@@ -89,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link:active {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 .nav__link.nav__link--active {
@@ -98,9 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*nav*/
-
 /*ofter*/
-
 .offer {
     padding-top: 142px;
     padding-bottom: 142px;
@@ -113,7 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 .offer__title {
     font-size: 48px;
     margin: 0 0 60px;
-
 }
 
 .offer__desc {
@@ -121,9 +127,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 60px;
 }
 
-
 /*ofter*/
-
 /*about*/
 .about {
     padding-top: 112px;
@@ -145,39 +149,50 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 540px;
     text-align: center;
     margin: 0 auto 0 auto;
-
-
 }
 
 /*about*/
-
 /*pict*/
 .pict {
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--color-accent);
     color: var(--color-contrast);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-
 }
 
 .pict__img {
     padding-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
+    -ms-flex-line-pack: center;
     align-content: center;
-
 }
 
 .pict__img__pr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .pict__img__name {
     color: var(--color-contrast);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -186,7 +201,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 21px;
     text-align: left;
     margin: 0;
-
 }
 
 .pict__img__p {
@@ -194,14 +208,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*pict*/
-
 /*video*/
 .video {
     background-color: var(--bg-main);
     padding-top: 100px;
     padding-bottom: 100px;
-
-
 }
 
 .video__title {
@@ -216,7 +227,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-title);
 }
 
-
 .video__title__desc {
     color: var(--color-main);
     font-weight: 400;
@@ -229,15 +239,13 @@ h1, h2, h3, h4, h5, h6 {
 .video__btn {
     position: relative;
     margin: 60px 0 0 0;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
-
 
 .video__btn__img {
     max-width: 1110px;
     height: 600px;
-
-
 }
 
 .video__btn__img__play {
@@ -250,8 +258,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*video*/
-
-
 /*footer*/
 .footer {
     padding-top: 50px;
@@ -272,16 +278,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*footer*/
-
 @media screen and (max-width: 1250px) {
     .center {
         padding-left: calc(50vw - 450px);
         padding-right: calc(50vw - 450px);
     }
-
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1040px) {
     body {
         display: block;
         overflow-x: hidden;
@@ -296,6 +300,8 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 30px;
         padding-bottom: 30px;
         gap: 6px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     img {
@@ -304,20 +310,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .video__title {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-
 
     .video__btn__img {
         max-width: 100%;
+        height: auto;
     }
-
 }
 
 @media screen and (max-width: 950px) {
     .center {
-        padding-left: calc(50vw - 350px);
-        padding-right: calc(50vw - 350px);
+        padding-left: calc(50vw - 320px);
+        padding-right: calc(50vw - 320px);
     }
 
     .header {
@@ -328,12 +333,45 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
+    .video__btn__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    body {
+        display: block;
+        overflow-x: hidden;
+        font-size: 12px;
+    }
+
+    .center {
+        padding-left: calc(50vw - 290px);
+        padding-right: calc(50vw - 290px);
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+    .offer {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .video__btn__img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 750px) {
     body {
         display: block;
         overflow-x: hidden;
+        font-size: 12px;
     }
 
     .center {
@@ -341,12 +379,10 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: calc(50vw - 300px);
     }
 
-    body {
-        font-size: 12px;
-    }
-
     .nav {
         gap: 20px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -374,6 +410,11 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 180px;
     }
 
+    .video__btn__img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .footer {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -392,11 +433,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav__list {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
     }
-}
 
+    .video__btn__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 420px) {
     body {
@@ -416,25 +464,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav__list {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         font-size: 12px;
     }
-
 
     .offer__title {
         font-size: 34px;
         margin: 0 0 30px;
     }
 
-
     .about__title {
         font-size: 30px;
         margin: 0 0 30px;
-
     }
 
     .pict {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -444,14 +494,13 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 100%;
     }
 
-
     .video__title {
         margin-bottom: 30px;
     }
 
-
     .video__btn__img {
         max-width: 100%;
+        height: auto;
     }
 
     .footer {
@@ -465,9 +514,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 @media screen and (max-width: 375px) {
-
     body {
         display: block;
         overflow-x: hidden;
@@ -485,25 +532,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav__list {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         font-size: 10px;
     }
-
 
     .offer__title {
         font-size: 34px;
         margin: 0 0 30px;
     }
 
-
     .about__title {
         font-size: 30px;
         margin: 0 0 30px;
-
     }
 
     .pict {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -513,14 +562,13 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 100%;
     }
 
-
     .video__title {
         margin-bottom: 30px;
     }
 
-
     .video__btn__img {
         max-width: 100%;
+        height: auto;
     }
 
     .footer {
@@ -533,3 +581,5 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
 }
+
+/*# sourceMappingURL=style.css.map */
